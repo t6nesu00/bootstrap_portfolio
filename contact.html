@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- link for Material icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <!-- link for font awesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -19,7 +19,7 @@
   <body>
 
   	<!-- Navigation Bar -->
-  	<nav class="navbar navbar-light bg-primary navbar-expand-md">
+    <nav class="navbar navbar-light bg-primary navbar-expand-md">
             <a href="#" class="navbar-brand">SumanNepali</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -27,25 +27,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="about.html" class="nav-link">About</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Skills/Education</a>
+                        <a href="skillnedu.html" class="nav-link">Skills/Education</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Projects</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Gallery</a>
+                        <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="reference.html" class="nav-link">References</a>
                     </li>
                 </ul>
             </div>
            
         </nav>
-
       <!-- Page Content -->
     <div class="container">
 
@@ -105,13 +107,40 @@
               <option value="2">Outside Finland</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+          <button type="submit" class="btn btn-primary" id="submitBtn" data-toggle="modal" data-target="#submit_text">Submit</button>
+          <div class="modal fade" id="submit_text" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="alert alert-success alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  Success! your form was submitted successfully.
+              </div>
+              </div>
+          </div>
+
           <button type="submit" class="btn btn-notification btn-md">
-            <i class="material-icons" style="font-size:20px;">
-            loop
-            </i> Refresh
+            <i class="fas fa-sync-alt"></i> &nbsp;Refresh
           </button>
         </form>
+        </div>
+        <div class="col-lg-6">
+          <h2>Connect me in social medias</h2>
+          <div class="row">
+            <div class="col-lg-2">
+            <a href="https://github.com/t6nesu00"><i class="fab fa-github fa-5x"></i></a>
+            <div>&nbsp;&nbsp;&nbsp;Github</div>
+          </div>
+          <div class="col-lg-2">
+            <a href="https://www.facebook.com/dallusuman"><i class="fab fa-facebook fa-5x"></i></a>
+            <div>Facebook</div>
+          </div>  
+          <div class="col-lg-2">
+            <a href="https://twitter.com/HlwZigri?lang=en"><i class="fab fa-twitter fa-5x"></i></a>
+            <div>Twitter</div>
+          </div>  
+          </div>
+          
+          
+          
         </div>
       </div>
 
